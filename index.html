@@ -2,177 +2,197 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Community Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VPS - Community Hub</title>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <!--custom css-->
-    <link rel="stylesheet" href="styles/style.css">
+  <!--favicon-->
+  <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon.webp" type="image/x-icon">
+
+
+  <!--custom css-->
+  <link rel="stylesheet" href="styles/style.css">
+
+  <style>
+    .card-img-top {
+      object-fit: cover;
+      object-position: center;
+      height: 200px;
+      width: 100%;
+    }
+  </style>
+
+<style>
+
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure the cards expand to fill the height of the grid container */
+    position: relative;
+
+  }
+
+  .card-body {
+    flex-grow: 1; /* Allow the card bodies to expand vertically */
+    padding: 1rem; /* Add padding to the card bodies */
+  }
+
+  .card-img-top {
+    object-fit: cover;
+    object-position: center;
+    height: 200px;
+    width: 100%;
+  }
+  .card-footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    border-top:0 black solid;
+    background-color: transparent;
+  }
+</style>
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg" style="background-color: #2b3245;">
-        <div class="container">
-          <a class="navbar-brand text-white font-weight-bold" href="#">Aurora Valley School District</a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Programs</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Future Students</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Current Students</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white" href="#">Community Conversation</a>
-              </li>
-            </ul>
+  <nav class="navbar navbar-expand-lg" style="background-color: black; border-top: 10px solid #a0226d;">
+    <div class="container">
+      <a class="navbar-brand text-white font-weight-bold" href="https://vansd.org/"><img
+          src="images/vpslogo_white_graywave.webp"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <h1 style="color:white">Community Hub</h1> <img style="margin-left:20px;width: 40px"
+          src="images/te-white-logo.png">
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container mt-5">
+    <a href="https://vansd.org/">&lt; Back to home</a>
+    <div class="d-flex justify-content-end">
+      <div id="google_translate_element"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Your Community, Your Conversation...</h1>
+        <p>We value your input and believe that communication is essential to creating a strong and inclusive school
+          community. That's why we're committed to engaging with you on all our community-facing projects, from
+          improving facilities to enhancing curriculum and beyond. Together, we can shape the future of our district and
+          ensure every student's success.</p>
+      </div>
+
+    </div>
+
+    
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top rounded-0" src="images/strat-plan-panner.jpg" alt="Card image cap"
+            style="height: 200px;">
+          <div class="card-body bg-white">
+            <h5 class="card-title">Help us Write our Story</h5>
+            
+          </div>
+          <div class="card-footer"><a href="https://vansd.org/write-our-story/" target="_blank"><button class="btn btn-primary"
+            style="background-color: black; border: 1px solid #2b3245;">Learn More</button></a></div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top rounded-0" src="images/student-advisory.jpeg" alt="Card image cap" style="height: 200px;">
+          <div class="card-body bg-white">
+            <h5 class="card-title">Student Advisory</h5>
+            
+          </div>
+          <div class="card-footer"><a href="https://funtoseeya.github.io/blog-project-page" target="_blank"><button class="btn btn-primary"
+            style="background-color: black; border: 1px solid black;">Learn More</button></a></div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top rounded-0" src="images/staff-council.png" alt="Card image cap" style="height: 200px;">
+          <div class="card-body bg-white">
+            <h5 class="card-title">Staff Advisory</h5>
+            
+          </div>
+          <div  class="card-footer"><a href="#" target="_blank"><button class="btn btn-primary"
+            style="background-color: black; border: 1px solid #2b3245;">Learn More</button></a></div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="pt-3 pb-3">Previous conversations</h2>
+    <div class="row pb-5">
+    
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top rounded-0" src="images/healthy-start-times.webp" style="height: 200px;" alt="Card image cap">
+          <div class="card-body bg-white">
+            <h5 class="card-title">Healthy Start Times</h5>
+          </div>
+          <div class="card-footer">            <a href="https://vansd.org/healthy-start-times/" target="_blank"><button class="btn btn-tertiary">Learn More</button></a>
           </div>
         </div>
-      </nav>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top rounded-0" src="images/te-exchange.jpg" style="height: 200px;" alt="Card image cap">
+          <div class="card-body bg-white">
+            <h5 class="card-title">What are your hopes, aspirations and dreams for students?</h5>
+          </div>
+          <div class="card-footer">            <a href="https://my.thoughtexchange.com/scroll/502658099" target="_blank"><button class="btn btn-tertiary">Learn More</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 box-shadow">
+          <img class="card-img-top rounded-0" src="images/te-exchange.jpg" style="height: 200px;" alt="Card image cap">
+          <div class="card-body bg-white">
+            <h5 class="card-title">Vision of a graduate - Spring 2023</h5>
+          </div>
+          <div class="card-footer">            <a href="https://my.thoughtexchange.com/scroll/834908936" target="_blank"><button class="btn btn-tertiary">Learn More</button></a>
+
+        </div>
+      </div>
+      </div>
       
-
-      <div class="container mt-5">
-        <div class="d-flex justify-content-end">
-          <div id="google_translate_element"></div>
-        </div>
-        
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Your Community, Your Conversation...</h1>
-                <p>We value your input and believe that communication is essential to creating a strong and inclusive school community. That's why we're committed to engaging with you on all our community-facing projects, from improving facilities to enhancing curriculum and beyond. Together, we can shape the future of our district and ensure every student's success.</p>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top rounded-0" src="images/kidz.jpeg" alt="Card image cap">
-                    <div class="card-body bg-white">
-                        <h5 class="card-title">Setting up for success 2023</h5>
-                        <a href="https://communityhub.thoughtexchange.com/testsite1/project/setting-up-for-success-2023/#" target="_blank"><button class="btn btn-primary" style="background-color: #2b3245; border: 1px solid #2b3245;">Learn More</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top rounded-0" src="images/planning_2.jpeg" alt="Card image cap">
-                    <div class="card-body bg-white">
-                        <h5 class="card-title">Classroom Renovations</h5>
-                        <a href="https://funtoseeya.github.io/blog-project-page" target="_blank"><button class="btn btn-primary" style="background-color: #2b3245; border: 1px solid #2b3245;">Learn More</button></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top rounded-0" src="images/future.jpeg" alt="Card image cap">
-                    <div class="card-body bg-white">
-                        <h5 class="card-title">Technology Upgrades</h5>
-                        <button class="btn btn-primary" style="background-color: #2b3245; border: 1px solid #2b3245;">Learn More</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top rounded-0" src="images/kidPlay.jpeg" alt="Card image cap">
-                    <div class="card-body bg-white">
-                        <h5 class="card-title">Safety Enhancements</h5>
-                        <button class="btn btn-primary" style="background-color: #2b3245; border: 1px solid #2b3245;">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top rounded-0" src="images/kidsLine.jpeg" alt="Card image cap">
-                    <div class="card-body bg-white">
-                        <h5 class="card-title">Special Education Services</h5>
-                        <button class="btn btn-primary" style="background-color: #2b3245; border: 1px solid #2b3245;">Learn More</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4 box-shadow">
-                    <img class="card-img-top rounded-0" src="images/planning_1.jpeg" alt="Card image cap">
-                    <div class="card-body bg-white">
-                        <h5 class="card-title">Curriculum Development</h5>
-                        <button class="btn btn-primary" style="background-color: #2b3245; border: 1px solid #2b3245;">Learn More</button>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        <h2>Previous conversations</h2>
-        <div class="row">
-            <div class="col-md-3">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top rounded-0" src="https://via.placeholder.com/350x200" alt="Card image cap">
-                <div class="card-body bg-white">
-                  <h5 class="card-title">Card 1</h5>
-                  <button class="btn btn-tertiary">Learn More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top rounded-0" src="https://via.placeholder.com/350x200" alt="Card image cap">
-                <div class="card-body bg-white">
-                  <h5 class="card-title">Card 2</h5>
-                  <button class="btn btn-tertiary">Learn More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top rounded-0" src="https://via.placeholder.com/350x200" alt="Card image cap">
-                <div class="card-body bg-white">
-                  <h5 class="card-title">Card 3</h5>
-                  <button class="btn btn-tertiary">Learn More</button>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="card mb-4 box-shadow">
-                <img class="card-img-top rounded-0" src="https://via.placeholder.com/350x200" alt="Card image cap">
-                <div class="card-body bg-white">
-                  <h5 class="card-title">Card 4</h5>
-                  <button class="btn btn-tertiary">Learn More</button>
-                </div>
-              </div>
-            </div>
-    </div>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar"></script>
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar"></script>
 
-<!--google translate -->
-<script type="text/javascript">
-  function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
-  }
-  </script>
-  
-  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-  
+    <!--google translate -->
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+      }
+    </script>
+
+    <script type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </body>
+
 </html>
