@@ -28,37 +28,39 @@
     }
   </style>
 
-<style>
+  <style>
+    .card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      /* Ensure the cards expand to fill the height of the grid container */
+      position: relative;
 
+    }
 
-  .card {
-    display: flex;
-    flex-direction: column;
-    height: 100%; /* Ensure the cards expand to fill the height of the grid container */
-    position: relative;
+    .card-body {
+      flex-grow: 1;
+      /* Allow the card bodies to expand vertically */
+      padding: 1rem;
+      /* Add padding to the card bodies */
+    }
 
-  }
+    .card-img-top {
+      object-fit: cover;
+      object-position: center;
+      height: 200px;
+      width: 100%;
+    }
 
-  .card-body {
-    flex-grow: 1; /* Allow the card bodies to expand vertically */
-    padding: 1rem; /* Add padding to the card bodies */
-  }
-
-  .card-img-top {
-    object-fit: cover;
-    object-position: center;
-    height: 200px;
-    width: 100%;
-  }
-  .card-footer {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px;
-    border-top:0 black solid;
-    background-color: transparent;
-  }
-</style>
+    .card-footer {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      padding: 10px;
+      border-top: 0 black solid;
+      background-color: transparent;
+    }
+  </style>
 
 </head>
 
@@ -96,7 +98,7 @@
 
     </div>
 
-    
+
     <div class="row">
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
@@ -104,34 +106,38 @@
             style="height: 200px;">
           <div class="card-body bg-white">
             <h5 class="card-title">Help us Write our Story</h5>
-            
+
           </div>
-          <div class="card-footer"><a href="https://vansd.org/write-our-story/" target="_blank"><button class="btn btn-primary"
-            style="background-color: black; border: 1px solid #2b3245;">Learn More</button></a></div>
+          <div class="card-footer"><a href="https://vansd.org/write-our-story/" target="_blank"><button
+                class="btn btn-primary" style="background-color: black; border: 1px solid #2b3245;">Learn
+                More</button></a></div>
 
         </div>
       </div>
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top rounded-0" src="images/student-advisory.jpeg" alt="Card image cap" style="height: 200px;">
+          <img class="card-img-top rounded-0" src="images/student-advisory.jpeg" alt="Card image cap"
+            style="height: 200px;">
           <div class="card-body bg-white">
             <h5 class="card-title">Student Advisory</h5>
-            
+
           </div>
-          <div class="card-footer"><a href="https://funtoseeya.github.io/blog-project-page" target="_blank"><button class="btn btn-primary"
-            style="background-color: black; border: 1px solid black;">Learn More</button></a></div>
+          <div class="card-footer"><a href="https://funtoseeya.github.io/blog-project-page" target="_blank"><button
+                class="btn btn-primary" style="background-color: black; border: 1px solid black;">Learn
+                More</button></a></div>
         </div>
       </div>
 
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top rounded-0" src="images/staff-council.png" alt="Card image cap" style="height: 200px;">
+          <img class="card-img-top rounded-0" src="images/staff-council.png" alt="Card image cap"
+            style="height: 200px;">
           <div class="card-body bg-white">
             <h5 class="card-title">Staff Advisory</h5>
-            
+
           </div>
-          <div  class="card-footer"><a href="#" target="_blank"><button class="btn btn-primary"
-            style="background-color: black; border: 1px solid #2b3245;">Learn More</button></a></div>
+          <div class="card-footer"><a href="#" target="_blank"><button class="btn btn-primary"
+                style="background-color: black; border: 1px solid #2b3245;">Learn More</button></a></div>
         </div>
       </div>
 
@@ -139,14 +145,16 @@
 
     <h2 class="pt-3 pb-3">Previous conversations</h2>
     <div class="row pb-5">
-    
+
       <div class="col-md-4">
         <div class="card mb-4 box-shadow">
-          <img class="card-img-top rounded-0" src="images/healthy-start-times.webp" style="height: 200px;" alt="Card image cap">
+          <img class="card-img-top rounded-0" src="images/healthy-start-times.webp" style="height: 200px;"
+            alt="Card image cap">
           <div class="card-body bg-white">
             <h5 class="card-title">Healthy Start Times</h5>
           </div>
-          <div class="card-footer">            <a href="https://vansd.org/healthy-start-times/" target="_blank"><button class="btn btn-tertiary">Learn More</button></a>
+          <div class="card-footer"> <a href="https://vansd.org/healthy-start-times/" target="_blank"><button
+                class="btn btn-tertiary">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -156,7 +164,8 @@
           <div class="card-body bg-white">
             <h5 class="card-title">What are your hopes, aspirations and dreams for students?</h5>
           </div>
-          <div class="card-footer">            <a href="https://my.thoughtexchange.com/scroll/502658099" target="_blank"><button class="btn btn-tertiary">Learn More</button></a>
+          <div class="card-footer"> <a href="https://my.thoughtexchange.com/scroll/502658099" target="_blank"><button
+                class="btn btn-tertiary">Learn More</button></a>
           </div>
         </div>
       </div>
@@ -166,32 +175,54 @@
           <div class="card-body bg-white">
             <h5 class="card-title">Vision of a graduate - Spring 2023</h5>
           </div>
-          <div class="card-footer">            <a href="https://my.thoughtexchange.com/scroll/834908936" target="_blank"><button class="btn btn-tertiary">Learn More</button></a>
+          <div class="card-footer"> <a href="https://my.thoughtexchange.com/scroll/834908936" target="_blank"><button
+                class="btn btn-tertiary">Learn More</button></a>
 
+          </div>
         </div>
       </div>
+      <div class="card">
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-md-6  align-items-center">
+              <h5 class="card-title">School Start Times - Spring 2023</h5>
+              <p class="card-text">Please take a moment to review the information collected about possible shifts in our
+                start and end times for the 2023-24 school year and share concerns that you might have or support you
+                might need if the shift were to take place.</p>
+            </div>
+            <div class="col-md-2 d-flex align-items-center">
+              <p class="card-text">June 2023</p>
+            </div>
+            <div class="col-md-2 d-flex align-items-center">
+
+              <p class="card-text"># Participants: 2k <i class="bi bi-people-fill"></i></p>
+            </div>
+            <div class="col-md-2 d-flex align-items-center"> <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
       </div>
-      
 
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar"></script>
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar"></script>
 
-    <!--google translate -->
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-      }
-    </script>
+      <!--google translate -->
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+      </script>
 
-    <script type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 
